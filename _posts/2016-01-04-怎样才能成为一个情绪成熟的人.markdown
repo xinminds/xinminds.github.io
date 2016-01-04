@@ -2,7 +2,7 @@
 layout: post
 title: "怎样才能成为一个情绪成熟的人"
 date: 2016-01-04 03:03:00
-categories: psyc
+categories: jekyll update
 --- 
 
 文|罗宾·贝曼（医学博士）颂雅·罗斯明斯基（医学博士）
