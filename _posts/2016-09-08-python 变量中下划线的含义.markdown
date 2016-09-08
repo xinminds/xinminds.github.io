@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "python 变量中下划线的含义"
-date: 2016-09-08 01:52:38
+date: 2016-09-08 14:00:00
 categories: python
 ---
 
