@@ -13,17 +13,17 @@ categories: python
 
 pep8 原文:
 
-> In addition, the following special forms using leading or trailing underscores are recognized (these can generally be combined with any case convention):
+    In addition, the following special forms using leading or trailing underscores are recognized (these can generally be combined with any case convention):
 
-> _single_leading_underscore : weak "internal use" indicator. E.g. from M import * does not import objects whose name starts with an underscore.
+    _single_leading_underscore : weak "internal use" indicator. E.g. from M import * does not import objects whose name starts with an underscore.
 
-> single_trailing_underscore_ : used by convention to avoid conflicts with Python keyword
+    single_trailing_underscore_ : used by convention to avoid conflicts with Python keyword
 
 
 翻译过来也就是:
 
 1. 对于单下划线开头的变量，可以认为是较“弱”的内部使用的变量，在 from M import * 时是不会 import 模块 M 中以单下划线开关的变量的。
-2. 对于单下划线结尾的变量，用于避免与关键字冲突而使用的机制，例如 Tkinter.Toplevel(master, class_='ClassName') 中的 class_。
+2. 对于单下划线结尾的变量，用于避免与关键字冲突而使用的机制，例如 `Tkinter.Toplevel(master, class_='ClassName')` 中的 `class_`。
 
 
 ## 双下划线变量
@@ -31,9 +31,9 @@ pep8 原文:
 pep8 原文:
 
 
-> __double_leading_underscore : when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo ; see below).
+    __double_leading_underscore : when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo ; see below).
 
-> __double_leading_and_trailing_underscore__ : "magic" objects or attributes that live in user-controlled namespaces. E.g. __init__ , __import__ or __file__ . Never invent such names; only use them as documented.
+    __double_leading_and_trailing_underscore__ : "magic" objects or attributes that live in user-controlled namespaces. E.g. __init__ , __import__ or __file__ . Never invent such names; only use them as documented.
 
 
 翻译过来就是:
