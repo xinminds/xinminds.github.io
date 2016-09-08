@@ -8,14 +8,12 @@
 
 pep8 原文:
 
-```
-In addition, the following special forms using leading or trailing underscores are recognized (these can generally be combined with any case convention):
+> In addition, the following special forms using leading or trailing underscores are recognized (these can generally be combined with any case convention):
 
-_single_leading_underscore : weak "internal use" indicator. E.g. from M import * does not import objects whose name starts with an underscore.
+> _single_leading_underscore : weak "internal use" indicator. E.g. from M import * does not import objects whose name starts with an underscore.
 
-single_trailing_underscore_ : used by convention to avoid conflicts with Python keyword
+> single_trailing_underscore_ : used by convention to avoid conflicts with Python keyword
 
-```
 
 翻译过来也就是:
 
@@ -27,11 +25,11 @@ single_trailing_underscore_ : used by convention to avoid conflicts with Python 
 
 pep8 原文:
 
-```
-__double_leading_underscore : when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo ; see below).
 
-__double_leading_and_trailing_underscore__ : "magic" objects or attributes that live in user-controlled namespaces. E.g. __init__ , __import__ or __file__ . Never invent such names; only use them as documented.
-```
+> __double_leading_underscore : when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo ; see below).
+
+> __double_leading_and_trailing_underscore__ : "magic" objects or attributes that live in user-controlled namespaces. E.g. __init__ , __import__ or __file__ . Never invent such names; only use them as documented.
+
 
 翻译过来就是:
 
