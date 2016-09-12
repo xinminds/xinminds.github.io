@@ -26,4 +26,4 @@ categories: lvs
     persistance template if it is to be used to schedule a
     new connection and the destination server is quiescent.
 
-因此，可以将 *expire_quiescent_template* 的值设成非零，这样“静止的”的 realserver 就不会收到新的连接；然后在等 LVS 的 connection hash tables 中相关的连接超时被移除后，该 realserver 就可以下线维护，而且不影响线上业务，也就是所说的“平滑移除”。
+因此，可以将 *expire_quiescent_template* 的值设成非零，这样“静止的的 realserver(LVS 中权值为 0 的 realserver)” 就不会收到新的连接；然后在等 LVS 的 connection hash tables 中相关的连接超时被移除后，该 realserver 就可以下线维护，而且不影响线上业务，也就是所说的“平滑移除”。
